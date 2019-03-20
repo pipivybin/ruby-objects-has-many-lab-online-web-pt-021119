@@ -18,5 +18,6 @@ def artist_name
     nil
     else self.artist.name
 end
+end
 
 end
