@@ -22,7 +22,6 @@ end
 
 def add_song_by_name(songname)
   song = Song.new(songname)
-  song.name = songname
   song.artist = self
   @@total_songs << song
   @songs << song
