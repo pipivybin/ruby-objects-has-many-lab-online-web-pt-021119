@@ -19,6 +19,7 @@ def add_post_by_title(posttitle)
   post = Post.new
   post.name = posttitle
   post.author = self
+  @posts << post
   @@total_posts << post
 end
 
