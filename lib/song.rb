@@ -13,8 +13,12 @@ def self.all
 @@all
 end
 
+def artist
+
+end
+
 def artist_name
-  
+
 end
 
 end
