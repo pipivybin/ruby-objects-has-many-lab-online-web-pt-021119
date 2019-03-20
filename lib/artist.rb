@@ -11,6 +11,7 @@ end
 
 def songs
   @@total_songs << @songs
+  @songs
 end
 
 def add_song(song)
