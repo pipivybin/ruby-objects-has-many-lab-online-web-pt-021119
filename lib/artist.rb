@@ -9,17 +9,19 @@ def initialize(name)
 end
 
 def songs
-  @@total_songs << @songs 
+  @@total_songs << @songs
 end
 
 def add_song(song)
   song.artist = self
+  @@total_songs << song
 end
 
 def add_song_by_name(songname)
   song = Song.new
   song.name = songname
   song.artist = self
+  @@total_songs << song
 end
 
 def self.song_count
