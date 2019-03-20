@@ -20,9 +20,9 @@ def add_post(post)
   @@total_posts << post
 end
 
-def add_post_by_title(posttitle)
+def add_post_by_title(title)
   post = Post.new
-  post.name = posttitle
+  post.name = title
   post.author = self
   @posts << post
   @@total_posts << post
