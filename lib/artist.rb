@@ -14,7 +14,6 @@ end
 def songs
   @@total_songs << @songs
   @songs
-  binding.pry
 end
 
 def add_song(song)
