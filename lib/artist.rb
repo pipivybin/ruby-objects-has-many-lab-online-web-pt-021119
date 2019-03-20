@@ -9,6 +9,10 @@ def initialize(name)
   @songs = []
 end
 
+def songs
+  @@total_songs << @songs
+end
+
 def add_song(song)
   song.artist = self
   @@total_songs << song
