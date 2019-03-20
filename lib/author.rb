@@ -9,6 +9,10 @@ def initialize(name)
   @posts = []
 end
 
+def posts=(posts)
+  @@total_posts << self
+end
+
 def add_post(post)
   post.author = self
   @posts << post
