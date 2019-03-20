@@ -6,8 +6,8 @@ def initialize(name)
   @name = name
 end
 
-def posts
-
+def add_post(post)
+  post.author = self
 end
 
 
