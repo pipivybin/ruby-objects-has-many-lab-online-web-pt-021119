@@ -10,6 +10,7 @@ def initialize(name)
 end
 
 def posts=(posts)
+  @post.
   @@total_posts << self
 end
 
