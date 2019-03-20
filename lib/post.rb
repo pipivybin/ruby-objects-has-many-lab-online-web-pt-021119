@@ -14,7 +14,9 @@ def self.all
 end
 
 def author_name
-  self.author.name || nil
+  if self.author == nil
+    nil
+  else self.author.name || nil
 end
 
 end
