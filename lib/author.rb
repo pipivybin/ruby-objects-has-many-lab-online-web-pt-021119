@@ -6,10 +6,16 @@ attr_accessor :name, :posts, :author
 
 def initialize(name)
   @name = name
+  @posts = []
+end
+
+def posts
+  @posts
 end
 
 def add_post(post)
   post.author = self
+  @posts << post
   @@total_posts << post
 end
 
